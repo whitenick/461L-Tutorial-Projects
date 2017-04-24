@@ -1,0 +1,25 @@
+
+body, h1, h2, h3, h4 {
+   font-family: Verdana, "Raleway", sans-serif;
+   
+}
+
+h1 {
+	text-align: center;
+}
+
+li {
+	text-align: center;
+	display:inline;
+}
+
+img {
+	display: block;
+	margin: auto;
+	width: 40%;
+}
+
+a {
+	display: block;
+	margin: auto;
+}

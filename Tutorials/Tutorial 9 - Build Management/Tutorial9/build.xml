@@ -1,0 +1,59 @@
+
+
+<!-- Tutorial 9: Exercise 1: Define properties -->
+<project name="Tutorial9" default="dist" basedir=".">
+
+  <description>
+    Tutorial 9 Build Management XML build file
+  </description>
+
+  <property name="src.dir" value="src"/>
+  <property name="build.dir" value="build"/>
+  <property name="dist.dir" value="dist"/>
+  <property name="dist.jar.dir" value="dist/lib"/>
+  <property name="jar.dir" value="lib"/>
+
+
+  <target name="compile">
+    <mkdir dir="${build.dir}"/>
+    <mkdir dir="${src.dir}"/>
+    <!-- Exercise 3: -->
+
+    <!-- <delete dir="${build.dir}"/ -->
+
+    <javac srcdir="${src.dir}" destdir="${build.dir}" classpath="${jar.dir}" includeantruntime="false"/>
+
+
+
+
+    <!-- Exercise 5 -->
+    <jar jarfile="my_jar.jar" basedir="${build.dir}"/>
+
+    <java jar="my_jar.jar" fork="true" />
+
+  </target>
+
+
+  <!-- Folowing Exercise 6, setup for targets, delete temp files and build files -->
+
+  <target name="clean">
+
+  </target>
+
+  <target name="jar" depends="compile">
+
+  </target>
+
+  <target name="run" depends="jar">
+
+  </target>
+
+
+
+
+
+
+
+
+
+</project>

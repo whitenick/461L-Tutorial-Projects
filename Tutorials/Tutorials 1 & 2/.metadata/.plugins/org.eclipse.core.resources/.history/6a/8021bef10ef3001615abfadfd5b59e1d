@@ -1,0 +1,5 @@
+package com.nickwhite.WebBlog;
+
+public class RequestsServlet {
+
+}

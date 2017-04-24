@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<meta id="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/stylesheets/w3.css" type="text/css">
+<link rel="stylesheet" href="/stylesheets/main.css" type="text/css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<body>
+
+  	<!-- !PAGE CONTENT! -->
+	<div class="w3-content" style="max-width:1200px">
+   
+    <!-- !HEADER! -->
+	<header class="w3-panel w3-center">
+  		<!-- !MENU! -->
+		<ul class="w3-navbar w3-black">
+  			<li style="width:20%"><a href="ofywebblog.jsp">Home</a></li>
+  			<li style="width:20%"><a href="allposts.jsp">All Posts</a></li>
+  			<li style="width:20%"><a href="response.jsp">Write Post</a></li>
+  			<li style="width:20%"><a href="subscribe.jsp">Subscribe</a></li>
+  			<li style="width:20%"><a href="about.html">About</a></li>
+		</ul>
+  		<h1 class="w3-center">A BLOG ABOUT DOMINO'S CAT</h1> 				
+	</header>
+	
+	<!-- !PAGE CONTENT! -->
+	<div class="w3-main w3-content" >
+	<h3 class="w3-center">THANK YOU!</h3>
+	<h4 class="w3-center">Your email preferences have been updated.</h4>
+
+	</div>	  	
+	 <!-- End Page Content -->
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,39 @@
+<project name="Exercise8" default="dist" basedir=".">
+    <property name="src.dir" value="src"/>
+    <property name="build.dir" value="build"/>
+    <property name="dist.dir" value="dist"/>
+    <property name="dist.jarfile" value="${dist.dir}/Exercise8.jar"/>
+
+    <target name="init">
+        <mkdir dir="${build.dir}"/>
+
+    </target>
+
+    <target name="compile" depends="init">
+        <javac srcdir="${src.dir}" destdir="${build.dir}" includeantruntime="false"/>
+
+    </target>
+
+    <target name="dist" depends="compile">
+        <jar jarfile="${dist.jarfile}" basedir="${build.dir}">
+          <manifest>
+            <attribute name="Main-Class" value="usa.texas.austin.HelloWorld"/>
+          </manifest>
+        </jar>
+    </target>
+
+    <target name="run" depends="dist">
+        <java jar="${dist.jarfile}" fork="true"/>
+    </target>
+
+    <target name="clean">
+
+		<delete dir="${build.dir}"/>
+		<delete dir="${dist.dir}"/>
+
+	</target>
+
+
+
+
+</project>
